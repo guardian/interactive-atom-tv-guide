@@ -1,8 +1,8 @@
 @import "mq";
 @import "fonts";
-$lightPink: #FFABDB;
-$mediumPink: #BB3B80;
-$darkPink: #7D0068;
+$lightGold: #eacca0;
+$mediumGold: #ab8958;
+$darkGold: #6b5840;
 $black: #121212;
 $grey: #DCDCDC; // Uncomment for embeds
 //@import "embed";
@@ -20,7 +20,7 @@ body {
   font-weight: 400;
 
   a {
-    color: $darkPink;
+    color: $darkGold;
   }
 }
 
@@ -80,7 +80,7 @@ img[data-lazy-img] {
   }
 
   svg {
-    fill: $darkPink;
+    fill: $darkGold;
   }
 
   .pre {
@@ -277,10 +277,10 @@ h1 {
         margin-top: 0;
         padding-top: 6px;
         padding-bottom: 12px;
-        color: $darkPink;
+        color: $darkGold;
 
         a {
-          color: $darkPink;
+          color: $darkGold;
         }
       }
     }
@@ -291,11 +291,14 @@ h1 {
     position: absolute;
     z-index: 20000;
     bottom: 0;
+    margin-bottom: 12px;
+
     @include mq(620px) {
       padding-left: 60px;
     }
     @include mq(tablet) {
       padding-left: 20px;
+      margin-bottom: 32px;
     }
     @include mq($from: desktop) {
       bottom: 0;
@@ -307,17 +310,22 @@ h1 {
 
     .content__main-column {
       max-width: none;
-      background: $black;
       width: 90%;
       padding: 0 10px 10px;
       float: left;
       // @include mq(tablet) {
       //   margin-left: 30px;
       // }
+
+      @include mq($until: mobileLandscape) {
+           margin-left: 6px;
+      }
+
       @include mq($from: tablet) {
         width: 100vw;
         margin-right: 0;
       }
+
     }
 
     h1 {
@@ -327,15 +335,15 @@ h1 {
       }
       @include mq($from: desktop) {
         max-width: 620px;
-      }
+        }
     }
 
     .large {
-      display: inline-block;
       line-height: 40px;
       font-size: 36px;
       font-family: "Guardian Headline Bold", Georgia, serif;
       font-weight: 900;
+      box-decoration-break: clone;
 
       @include mq($from: desktop) {
         line-height: 54px;
@@ -345,11 +353,18 @@ h1 {
 
     .light-highlight {
       width: 100%;
-      color: $lightPink;
+      background-color: $lightGold;
+      box-shadow: 6px 0 0 $lightGold, -6px 0 0 $lightGold;
+      color: $black;
+      padding-bottom: 6px;
+      line-height: 34px;
+      font-size: 20px;
     }
 
     .dark-highlight {
       max-width: 700px;
+      background-color: $black;
+      box-shadow: 6px 0 0 $black, -6px 0 0 $black;
     }
   }
 }
@@ -504,7 +519,11 @@ h1 {
     };
 
     img {
-      position: absolute;
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: center;
       @include mq($from: phablet) {
         width: auto;
         height: 100%;
@@ -533,28 +552,16 @@ h1 {
       }
     }
     .people-image {
-      transform: translateX(-52%);
-      @include mq($from: mobileLandscape) {
-        transform: translateX(0%);
-      }
+
     }
     .places-image {
-      transform: translateX(-50%);
-      @include mq($from: mobileLandscape) {
-        transform: translateX(0%);
-      }
+
     }
     .food-image {
-      transform: translateX(-30%);
-      @include mq($from: mobileLandscape) {
-        transform: translateX(0%);
-      }
+
     }
     .writing-image {
-      transform: translateX(-8%);
-      @include mq($from: mobileLandscape) {
-        transform: translateX(0%);
-      }
+
     }
 
   }
@@ -583,7 +590,7 @@ h1 {
       font-size: 36px;
       line-height: 32px !important;
       font-weight: 100;
-      color: $lightPink;
+      color: $lightGold;
       border-bottom: solid 1px #777;
       @include mq($from:desktop) {
         font-size: 50px;
@@ -643,7 +650,7 @@ h1 {
       color: white;
       font-size: 16px;
       font-weight: 600;
-      font-family: "Guardian Sans Web", "Guardian Agate Sans 1 Web", sans-serif;
+      font-family: $f-sans-serif-text;
       background-color: $black;
       border: none;
       margin-top: 10px;
@@ -668,7 +675,7 @@ h1 {
     &.heading {
       padding: 0;
       margin-top: 6px;
-      line-height: 36px;
+      line-height: 0px !important;
       @include mq($from: tablet) {
         padding-left: 0;
       }
@@ -692,8 +699,30 @@ h1 {
   }
 
   .heading .text {
-    @include mq($from: leftCol) {
-      max-width: 610px;
+      line-height: 32px;
+
+      @include mq($from: leftCol) {
+        max-width: 610px;
+      }
+
+    &.label {
+        background-color: #ffe500;
+        font-size: 16px;
+        font-weight: 900;
+        color: #121212;
+        display: inline;
+        padding: 0px 4px;
+    }
+
+    &.date {
+        font-family: "Guardian Headline Regular";
+        font-weight: 200;
+        line-height: 32px;
+        color: #121212;
+
+        @include mq($from: desktop) {
+            line-height: 48px;
+        }
     }
   }
 
@@ -762,7 +791,7 @@ h1 {
       &.heading {
         border-top: solid 1px $grey;
         border-bottom: solid 1px $grey;
-        color: $darkPink;
+        color: $darkGold;
         padding-top: 4px;
         margin-top: 0;
         padding-bottom: 8px;
@@ -784,7 +813,7 @@ h1 {
       margin-bottom: 14px;
       font-family: "Guardian Headline Italic Bold", Georgia, serif;
       font-weight: 900;
-      color: $darkPink;
+      color: $darkGold;
       display: inline-block;
       // line-height: 20px;
     }
@@ -840,7 +869,7 @@ h1 {
       }
 
       .pullquote-credit {
-        color: $darkPink;
+        color: $darkGold;
         display: block;
         background-color: #fff;
         margin-top: 3px;
@@ -851,8 +880,8 @@ h1 {
       }
 
       .pullquote {
-        background-color: $darkPink;
-        box-shadow: 5px 0 0 $darkPink,-5px 0 0 $darkPink;
+        background-color: $darkGold;
+        box-shadow: 5px 0 0 $darkGold,-5px 0 0 $darkGold;
         padding-bottom: 3px;
 
         &:before {
@@ -876,7 +905,7 @@ h1 {
   }
   .copy {
     a {
-      color: $darkPink;
+      color: $darkGold;
     }
   }
   .caption p {

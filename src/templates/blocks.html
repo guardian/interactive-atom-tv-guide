@@ -1,11 +1,11 @@
 <div id="people" data-link-name="people header" class="section header people" data-id="people">
   <div class="section-header--image">
-    <img class="{{imageclass}} place-image people-image" data-lazy-img alt="{{id}}" data-src="https://media.guim.co.uk/cffcee2ab6f7219e1c838cbcdf39db39158adc75/0_678_7558_4536/2000.jpg" src="" height="600" width="900" />
+    <img class="{{imageclass}} place-image people-image" data-lazy-img alt="{{id}}" data-src="https://media.guim.co.uk/1f5f4105a56df5a47f7d343f46a44962a57857b2/117_0_1800_1080/1800.jpg" src="" height="600" width="900" />
     <div class="section-header--title">
       <div class="gs-container">
         <div class="content__main-column">
-          <h1>People</h1>
-          <p>Names to watch out for - from the up and coming to the influential</p>
+          <h1>Netflix</h1>
+          <p>From The Witch to the return of Jessica Jones, the best TV and films on Netflix this month</p>
         </div>
       </div>
     </div>
@@ -19,7 +19,7 @@
     <div class="section-header--button">
       <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
         <g fill="none" fill-rule="evenodd">
-          <circle cx="22" cy="22" r="22" fill="#FFABDB"/>
+          <circle cx="22" cy="22" r="22" fill="#eacca0"/>
           <polygon fill="#000" fill-rule="nonzero" points="20.909 23.091 12 22.682 12 21.295 20.909 20.909 21.295 12 22.682 12 23.091 20.909 32 21.295 32 22.682 23.091 23.091 22.682 32 21.295 32"/>
         </g>
       </svg>
@@ -27,9 +27,15 @@
     </div>
   </div>
   <div class="section copy people">
-  {{#People}}
+  {{#Netflix}}
       <div class="content__main-column">
-      <h1 class="heading" id="{{section}}"><div class="text">{{{headline}}}</div></h1>
+      <h1 class="heading" id="{{section}}">
+          {{#label}}
+            <div class="text label">{{{label}}}</div>
+          {{/label}}
+          <div class="text">{{{headline}}}</div>
+          <div class="text date">{{{date}}}</div>
+      </h1>
       {{#image}}
         <div class="body-image">
           <img src="{{{image}}}">
@@ -43,7 +49,9 @@
           </p>
         </div>
       {{/imageCaption}}
-      <pre class="copy">{{{description}}}</pre><div class="credit">{{{credit}}}</div>
+      <pre class="copy">{{{description}}}</pre>
+      <div class="credit link"><a href="{{{link}}}">Read our review</a></div>
+      <div class="credit">{{{credit}}}</div>
       </div>
       <div class="ad--wrapper--desktop">
         <div id="{{adID}}" class="js-ad-slot ad-slot ad-slot--mpu-banner-ad ad-slot--right" data-link-name="ad slot {{adDataName}}" data-test-id="{{adTestId}}" data-name="{{adName}}" data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
@@ -53,21 +61,22 @@
         <div id="{{adIDMobile}}" class="js-ad-slot ad-slot ad-slot--inline {{adTestIdMobile}}" data-link-name="ad slot {{adDataNameMobile}}" data-test-id="{{adTestIdMobile}}" data-name="{{adNameMobile}}" data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
         {{/adIDMobile}}
       </div>
-  {{/People}}
+  {{/Netflix}}
 </div>
 </div>
 <div class="ad--wrapper--mobile" style="padding:20px 0px;">
   <div id="dfp-ad--inline7" class="js-ad-slot ad-slot ad-slot--inline ad-slot--inline7" data-link-name="ad slot inline5" data-test-id="ad-slot-inline7" data-name="inline7" data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
 </div>
-<!--places-->
-<div id="places" data-link-name="places header" class="section header places" data-id="places">
+
+<!--FoodDrink-->
+<div id="FoodDrink" data-link-name="food header" class="section header FoodDrink" data-id="FoodDrink">
   <div class="section-header--image">
-    <img class="bottom place-image place-image places-image" data-lazy-img alt="{{id}}" data-src="https://media.guim.co.uk/28541643d5270cda041e6229a2e078e818d20928/0_374_5616_3370/2000.jpg" src="" height="600" width="900" />
+    <img class="bottom place-image  food-image" data-lazy-img alt="{{id}}" data-src="https://media.guim.co.uk/d17b71a330c6d47dc9edbd0b5b090188a47152cd/0_8_3680_2208/2000.jpg" src="" height="600" width="900" />
     <div class="section-header--title">
       <div class="gs-container">
         <div class="content__main-column">
-          <h1>Places</h1>
-          <p>Make a booking in a small but perfect fish restaurant in Brighton, plan a holiday in British Columbia</p>
+            <h1>Amazon</h1>
+            <p>The Looming Tower to Suburbicon, the best TV and films on Amazon this month</p>
         </div>
       </div>
     </div>
@@ -81,7 +90,72 @@
     <div class="section-header--button">
       <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
         <g fill="none" fill-rule="evenodd">
-          <circle cx="22" cy="22" r="22" fill="#FFABDB"/>
+          <circle cx="22" cy="22" r="22" fill="#eacca0"/>
+          <polygon fill="#000" fill-rule="nonzero" points="20.909 23.091 12 22.682 12 21.295 20.909 20.909 21.295 12 22.682 12 23.091 20.909 32 21.295 32 22.682 23.091 23.091 22.682 32 21.295 32"/>
+        </g>
+      </svg>
+      <p class="button">Read more</p>
+    </div>
+  </div>
+  <div class="section copy FoodDrink">
+  {{#Amazon}}
+      <div class="content__main-column">
+          <h1 class="heading" id="{{section}}">
+              {{#label}}
+                <div class="text label">{{{label}}}</div>
+              {{/label}}
+              <div class="text">{{{headline}}}</div>
+              <div class="text date">{{{date}}}</div>
+          </h1>
+        {{#image}}
+          <div class="body-image">
+            <img src="{{{image}}}">
+          </div>
+        {{/image}}
+        {{#imageCaption}}
+        <div class="caption">
+          <p class="caption-text">
+            <svg width="11" height="10" viewBox="0 0 11 10"><path fill-rule="evenodd" d="M5.5 0L11 10H0z"/></svg>
+           {{imageCaption}}
+          </p>
+        </div>
+        {{/imageCaption}}
+      <pre class="copy">{{{description}}}</pre><div class="credit">{{{credit}}}</div>
+      </div>
+      <div class="ad--wrapper--desktop">
+        <div id="{{adID}}" class="js-ad-slot ad-slot ad-slot--mpu-banner-ad ad-slot--right" data-link-name="ad slot {{adDataName}}" data-test-id="{{adTestId}}" data-name="{{adName}}" data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
+      </div>
+      <div class="ad--wrapper--mobile" {{#adIDMobile}} style="padding:20px 0px;" {{/adIDMobile}}>
+        {{#adIDMobile}}
+        <div id="{{adIDMobile}}" class="js-ad-slot ad-slot ad-slot--inline {{adTestIdMobile}}" data-link-name="ad slot {{adDataNameMobile}}" data-test-id="{{adTestIdMobile}}" data-name="{{adNameMobile}}" data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
+        {{/adIDMobile}}
+      </div>
+  {{/Amazon}}
+</div>
+</div>
+<!--places-->
+<div id="places" data-link-name="places header" class="section header places" data-id="places">
+  <div class="section-header--image">
+    <img class="bottom place-image place-image places-image" data-lazy-img alt="{{id}}" data-src="https://media.guim.co.uk/7e1bad4203fd3da438ae947103624d475fcd54f0/0_0_5119_3071/2000.jpg" src="" height="600" width="900" />
+    <div class="section-header--title">
+      <div class="gs-container">
+        <div class="content__main-column">
+            <h1>BBC iPlayer</h1>
+            <p>Civilisations to the second outing of This Country, the best TV and films on iPlayer this month</p>
+        </div>
+      </div>
+    </div>
+    <div class="section-strap-line">
+      <div class="strapline-wrapper">
+        <!-- <div class="content__main-column">
+          <span class="strapline">{{strapline}}</span>
+        </div> -->
+      </div>
+    </div>
+    <div class="section-header--button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+        <g fill="none" fill-rule="evenodd">
+          <circle cx="22" cy="22" r="22" fill="#eacca0"/>
           <polygon fill="#000" fill-rule="nonzero" points="20.909 23.091 12 22.682 12 21.295 20.909 20.909 21.295 12 22.682 12 23.091 20.909 32 21.295 32 22.682 23.091 23.091 22.682 32 21.295 32"/>
         </g>
       </svg>
@@ -89,9 +163,15 @@
     </div>
   </div>
   <div class="section copy places">
-  {{#Places}}
+  {{#iPlayer}}
       <div class="content__main-column">
-        <h1 class="heading" id="{{section}}"><div class="text">{{{headline}}}</div></h1>
+          <h1 class="heading" id="{{section}}">
+              {{#label}}
+                <div class="text label">{{{label}}}</div>
+              {{/label}}
+              <div class="text">{{{headline}}}</div>
+              <div class="text date">{{{date}}}</div>
+          </h1>
         {{#image}}
           <div class="body-image">
             <img src="{{{image}}}">
@@ -110,68 +190,7 @@
       <div class="ad--wrapper--desktop">
         <div id="{{adID}}" class="js-ad-slot ad-slot ad-slot--mpu-banner-ad ad-slot--right" data-link-name="ad slot {{adDataName}}" data-test-id="{{adTestId}}" data-name="{{adName}}" data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
       </div>
-  {{/Places}}
-</div>
-</div>
-
-
-<!--FoodDrink-->
-<div id="FoodDrink" data-link-name="food header" class="section header FoodDrink" data-id="FoodDrink">
-  <div class="section-header--image">
-    <img class="bottom place-image  food-image" data-lazy-img alt="{{id}}" data-src="https://media.guim.co.uk/98e8d3e1ff1cf643166862cdea0100efcbc8dab4/0_423_6389_3836/2000.jpg" src="" height="600" width="900" />
-    <div class="section-header--title">
-      <div class="gs-container">
-        <div class="content__main-column">
-          <h1>Food &amp; drink</h1>
-          <p>Indulge in the ultimate steak, join the deep fried revival, try pepper from Nepal</p>
-        </div>
-      </div>
-    </div>
-    <div class="section-strap-line">
-      <div class="strapline-wrapper">
-        <!-- <div class="content__main-column">
-          <span class="strapline">{{strapline}}</span>
-        </div> -->
-      </div>
-    </div>
-    <div class="section-header--button">
-      <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
-        <g fill="none" fill-rule="evenodd">
-          <circle cx="22" cy="22" r="22" fill="#FFABDB"/>
-          <polygon fill="#000" fill-rule="nonzero" points="20.909 23.091 12 22.682 12 21.295 20.909 20.909 21.295 12 22.682 12 23.091 20.909 32 21.295 32 22.682 23.091 23.091 22.682 32 21.295 32"/>
-        </g>
-      </svg>
-      <p class="button">Read more</p>
-    </div>
-  </div>
-  <div class="section copy FoodDrink">
-  {{#FoodDrink}}
-      <div class="content__main-column">
-        <h1 class="heading" id="{{section}}"><div class="text">{{{headline}}}</div></h1>
-        {{#image}}
-          <div class="body-image">
-            <img src="{{{image}}}">
-          </div>
-        {{/image}}
-        {{#imageCaption}}
-        <div class="caption">
-          <p class="caption-text">
-            <svg width="11" height="10" viewBox="0 0 11 10"><path fill-rule="evenodd" d="M5.5 0L11 10H0z"/></svg>
-           {{imageCaption}}
-          </p>
-        </div>
-        {{/imageCaption}}
-      <pre class="copy">{{{description}}}</pre><div class="credit">{{{credit}}}</div>
-      </div>
-      <div class="ad--wrapper--desktop">
-        <div id="{{adID}}" class="js-ad-slot ad-slot ad-slot--mpu-banner-ad ad-slot--right" data-link-name="ad slot {{adDataName}}" data-test-id="{{adTestId}}" data-name="{{adName}}" data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
-      </div>
-      <div class="ad--wrapper--mobile" {{#adIDMobile}} style="padding:20px 0px;" {{/adIDMobile}}>
-        {{#adIDMobile}}
-        <div id="{{adIDMobile}}" class="js-ad-slot ad-slot ad-slot--inline {{adTestIdMobile}}" data-link-name="ad slot {{adDataNameMobile}}" data-test-id="{{adTestIdMobile}}" data-name="{{adNameMobile}}" data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
-        {{/adIDMobile}}
-      </div>
-  {{/FoodDrink}}
+  {{/iPlayer}}
 </div>
 </div>
 <div class="ad--wrapper--mobile" style="padding:20px 0px;">
@@ -180,12 +199,12 @@
 <!--BOOKS-->
 <div id="books" data-link-name="books header" class="section header books" data-id="books">
   <div class="section-header--image">
-    <img class="{{imageclass}} place-image writing-image" data-lazy-img alt="{{id}}" data-src="https://media.guim.co.uk/e7e6ea1886031c908287d3d807c3a3eb418a4d94/859_1445_5780_3467/2000.jpg" src="" height="600" width="900" />
+    <img class="{{imageclass}} place-image writing-image" data-lazy-img alt="{{id}}" data-src="https://media.guim.co.uk/b43c409ef6ff514071e2bb7a26e71220b219e817/0_0_2246_1347/2000.jpg" src="" height="600" width="900" />
     <div class="section-header--title">
       <div class="gs-container">
         <div class="content__main-column">
-          <h1>Writing</h1>
-          <p>Classic books, adventurous magazines, new voices</p>
+            <h1>Best of the rest</h1>
+            <p>13 Commandments to The Sopranos, the best boxsets to digest this month</p>
         </div>
       </div>
     </div>
@@ -199,7 +218,7 @@
     <div class="section-header--button">
       <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
         <g fill="none" fill-rule="evenodd">
-          <circle cx="22" cy="22" r="22" fill="#FFABDB"/>
+          <circle cx="22" cy="22" r="22" fill="#eacca0"/>
           <polygon fill="#000" fill-rule="nonzero" points="20.909 23.091 12 22.682 12 21.295 20.909 20.909 21.295 12 22.682 12 23.091 20.909 32 21.295 32 22.682 23.091 23.091 22.682 32 21.295 32"/>
         </g>
       </svg>
@@ -207,9 +226,15 @@
     </div>
   </div>
   <div class="section copy books">
-  {{#Books}}
+  {{#Rest}}
       <div class="content__main-column">
-      <h1 class="heading" id="{{section}}"><div class="text">{{{headline}}}</div></h1>
+          <h1 class="heading" id="{{section}}">
+              {{#label}}
+                <div class="text label">{{{label}}}</div>
+              {{/label}}
+              <div class="text">{{{headline}}}</div>
+              <div class="text date">{{{date}}}</div>
+          </h1>
         {{#image}}
           <div class="body-image">
             <img src="{{{image}}}">
@@ -233,6 +258,6 @@
         <div id="{{adIDMobile}}" class="js-ad-slot ad-slot ad-slot--inline {{adTestIdMobile}}" data-link-name="ad slot {{adDataNameMobile}}" data-test-id="{{adTestIdMobile}}" data-name="{{adNameMobile}}" data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
         {{/adIDMobile}}
       </div>
-  {{/Books}}
+  {{/Rest}}
 </div>
 </div>

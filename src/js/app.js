@@ -3,7 +3,7 @@ import blocksTemplate from '../templates/blocks.html'
 import Mustache from 'mustache'
 
 // load the docs data
-xr.get('https://interactive.guim.co.uk/docsdata-test/1oEb2VKND1R5H3UeDsi0Bf7265VMt4DieVcojviKTb-I.json').then((resp) => {
+xr.get('https://interactive.guim.co.uk/docsdata-test/1n6h_NXWt5MbHFvhkRhLqLw6ypKW0JQsz9Abf4TkYCiY.json').then((resp) => {
     var sheets = resp.data.sheets;
     console.log(sheets);
     // render just the html for the blocks
