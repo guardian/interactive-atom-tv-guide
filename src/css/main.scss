@@ -182,7 +182,7 @@ h1 {
     .video-image {
       position: absolute;
       top: 50%;
-      left: 20%;
+      left: 50%;
       min-width: 100%;
       min-height: 100%;
       width: auto;
@@ -220,6 +220,14 @@ h1 {
       @include mq($from: desktop) {
         width: 600px;
       }
+    }
+
+    .content__dateline {
+        font-size: 12px;
+
+        .content__dateline-wpd--modified {
+            color: #999999 !important;
+        }
     }
 
     .standfirst--wrapper {
