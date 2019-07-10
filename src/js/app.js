@@ -83,7 +83,7 @@ xr.get('https://interactive.guim.co.uk/docsdata/1DQaASu8qYjKDcno5UJob_AdV6iVoVna
       }
     });
 
-    setTimeout(function(){
-			wantsVideo.getsVideo();
-		}, 1000);
+    // setTimeout(function(){
+		// 	wantsVideo.getsVideo();
+		// }, 1000);
 });
