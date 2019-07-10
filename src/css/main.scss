@@ -15,12 +15,16 @@ $grey: #DCDCDC; // Uncomment for embeds
 }
 
 body {
-  overflow: hidden;
   font-family: "Guardian Headline Regular", Georgia, serif;
   font-weight: 400;
 
   a {
     color: $darkGold;
+  }
+
+  .android &,
+  .ios & {
+    overflow-y: scroll;
   }
 }
 
