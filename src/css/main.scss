@@ -323,6 +323,10 @@ h1 {
       padding-left: 0px;
     }
 
+    h1, h2 {
+      margin: 0;
+    }
+
     .content__main-column {
       max-width: none;
       width: 90%;
@@ -652,6 +656,7 @@ h1 {
   }
 
   &--button {
+    display: flex;
     position: absolute;
     bottom: -10px;
     left: 10px;
@@ -963,6 +968,7 @@ h1 {
   }
 
   .section-header--button {
+    
     svg {
       float: left;
     }
