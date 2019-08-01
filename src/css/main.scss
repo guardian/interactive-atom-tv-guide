@@ -17,6 +17,7 @@ $grey: #DCDCDC; // Uncomment for embeds
 body {
   font-family: "Guardian Headline Regular", Georgia, serif;
   font-weight: 400;
+  over
 
   a {
     color: $darkGold;
@@ -51,6 +52,7 @@ img[data-lazy-img] {
 
 .interactive-blocks {
   background-color: #fff;
+  overflow: hidden;
 }
 
 .ad--wrapper--desktop {
@@ -282,7 +284,6 @@ h1 {
       .byline-wrap {
         border-top: 1px solid $grey;
         border-bottom: 1px solid $grey;
-        width: 100vw;
         p {
           max-width:80%;
           @include mq($from: desktop) {
