@@ -7,7 +7,7 @@ el.src = '<%= path %>/app.js';
 document.body.appendChild(el);
 
 
-xr.get('https://interactive.guim.co.uk/docsdata/1DQaASu8qYjKDcno5UJob_AdV6iVoVnaxlBCq1OrQ2ME.json').then((resp) => {
+xr.get('https://interactive.guim.co.uk/docsdata-test/1BPkQkbw4pH_eNirKTz3ECUpbUoOuRcEQCUla3DOYz3o.json').then((resp) => {
 		var sheets = resp.data.sheets;
 		var html = Mustache.render(blocksTemplate, sheets);
 
