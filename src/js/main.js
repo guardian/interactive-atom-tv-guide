@@ -7,9 +7,9 @@ el.src = '<%= path %>/app.js';
 document.body.appendChild(el);
 
 
-xr.get('https://interactive.guim.co.uk/docsdata-test/1yncWTK2C4Fu587w4Ov7c-tmnShgJEdTMwdQiQphm2AQ.json').then((resp) => {
-		var sheets = resp.data.sheets;
-		var html = Mustache.render(blocksTemplate, sheets);
+xr.get('https://interactive.guim.co.uk/docsdata-test/15Y19eKr6Nqz0jA5KuIbS03EOSI3fWgJXJsLsoCVQ2N0.json').then((resp) => {
+	var sheets = resp.data.sheets;
+	var html = Mustache.render(blocksTemplate, sheets);
 
-		return html;
-	});
+	return html;
+});
