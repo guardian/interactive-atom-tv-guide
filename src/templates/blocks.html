@@ -1,11 +1,13 @@
 <div id="people" data-link-name="people header" class="section header people" data-id="people">
   <div class="section-header--image">
-    <img class="{{imageclass}} place-image people-image" data-lazy-img alt="{{id}}" data-src="https://media.guim.co.uk/53549efa6698b77d66dd74dfa702caabc2ccb35f/0_297_6000_3600/2000.jpg" src="" height="600" width="900" />
+    <img class="{{imageclass}} place-image people-image" data-lazy-img alt="{{id}}"
+      data-src="https://media.guim.co.uk/484ca07a8a4f5c7680e276aeec94a71ccb0aa38f/0_200_4500_2700/2000.jpg" src=""
+      height="600" width="900" />
     <div class="section-header--title">
       <div class="gs-container">
         <div class="content__main-column">
           <h1>Netflix</h1>
-          <p>The Spy, Elite, The I-Land, Top Boy, Unbelievable</p>
+          <p>Rythm + Flow, El Camino, Living With Yourself</p>
         </div>
       </div>
     </div>
@@ -19,66 +21,76 @@
     <div class="section-header--button">
       <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
         <g fill="none" fill-rule="evenodd">
-          <circle cx="22" cy="22" r="22" fill="#eacca0"/>
-          <polygon fill="#000" fill-rule="nonzero" points="20.909 23.091 12 22.682 12 21.295 20.909 20.909 21.295 12 22.682 12 23.091 20.909 32 21.295 32 22.682 23.091 23.091 22.682 32 21.295 32"/>
+          <circle cx="22" cy="22" r="22" fill="#eacca0" />
+          <polygon fill="#000" fill-rule="nonzero"
+            points="20.909 23.091 12 22.682 12 21.295 20.909 20.909 21.295 12 22.682 12 23.091 20.909 32 21.295 32 22.682 23.091 23.091 22.682 32 21.295 32" />
         </g>
       </svg>
       <p class="button">Read more</p>
     </div>
   </div>
   <div class="section copy people">
-  {{#Netflix}}
-      <div class="content__main-column">
+    {{#Netflix}}
+    <div class="content__main-column">
       <h1 class="heading" id="{{section}}">
-          {{#label}}
-            <div class="text label">{{{label}}}</div>
-          {{/label}}
-          <div class="text">{{{headline}}}</div>
-          <div class="text date">{{{date}}}</div>
+        {{#label}}
+        <div class="text label">{{{label}}}</div>
+        {{/label}}
+        <div class="text">{{{headline}}}</div>
+        <div class="text date">{{{date}}}</div>
       </h1>
       {{#image}}
-        <div class="body-image">
-          <img src="{{{image}}}">
-        </div>
+      <div class="body-image">
+        <img src="{{{image}}}">
+      </div>
       {{/image}}
       {{#imageCaption}}
-        <div class="caption">
-          <p class="caption-text">
-            <svg width="11" height="10" viewBox="0 0 11 10"><path fill-rule="evenodd" d="M5.5 0L11 10H0z"/></svg>
-           {{imageCaption}}
-          </p>
-        </div>
+      <div class="caption">
+        <p class="caption-text">
+          <svg width="11" height="10" viewBox="0 0 11 10">
+            <path fill-rule="evenodd" d="M5.5 0L11 10H0z" /></svg>
+          {{imageCaption}}
+        </p>
+      </div>
       {{/imageCaption}}
       <pre class="copy">{{{description}}}</pre>
       {{#link}}
-        <div class="credit link"><a href="{{{link}}}">Read our review</a></div>
+      <div class="credit link"><a href="{{{link}}}">Read our review</a></div>
       {{/link}}
       <div class="credit">{{{credit}}}</div>
-      </div>
-      <div class="ad--wrapper--desktop">
-        <div id="{{adID}}" class="js-ad-slot ad-slot ad-slot--mpu-banner-ad ad-slot--right" data-link-name="ad slot {{adDataName}}" data-test-id="{{adTestId}}" data-name="{{adName}}" data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
-      </div>
-      <div class="ad--wrapper--mobile" {{#adIDMobile}} style="padding:20px 0px;" {{/adIDMobile}}>
-        {{#adIDMobile}}
-        <div id="{{adIDMobile}}" class="js-ad-slot ad-slot ad-slot--inline {{adTestIdMobile}}" data-link-name="ad slot {{adDataNameMobile}}" data-test-id="{{adTestIdMobile}}" data-name="{{adNameMobile}}" data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
-        {{/adIDMobile}}
-      </div>
-  {{/Netflix}}
-</div>
+    </div>
+    <div class="ad--wrapper--desktop">
+      <div id="{{adID}}" class="js-ad-slot ad-slot ad-slot--mpu-banner-ad ad-slot--right"
+        data-link-name="ad slot {{adDataName}}" data-test-id="{{adTestId}}" data-name="{{adName}}"
+        data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
+    </div>
+    <div class="ad--wrapper--mobile" {{#adIDMobile}} style="padding:20px 0px;" {{/adIDMobile}}>
+      {{#adIDMobile}}
+      <div id="{{adIDMobile}}" class="js-ad-slot ad-slot ad-slot--inline {{adTestIdMobile}}"
+        data-link-name="ad slot {{adDataNameMobile}}" data-test-id="{{adTestIdMobile}}" data-name="{{adNameMobile}}"
+        data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
+      {{/adIDMobile}}
+    </div>
+    {{/Netflix}}
+  </div>
 </div>
 <div class="ad--wrapper--mobile" style="padding:20px 0px;">
-  <div id="dfp-ad--inline7" class="js-ad-slot ad-slot ad-slot--inline ad-slot--inline7" data-link-name="ad slot inline5" data-test-id="ad-slot-inline7" data-name="inline7" data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
+  <div id="dfp-ad--inline7" class="js-ad-slot ad-slot ad-slot--inline ad-slot--inline7" data-link-name="ad slot inline5"
+    data-test-id="ad-slot-inline7" data-name="inline7" data-mobile="1,1|2,2|300,250|fluid"
+    data-desktop="1,1|2,2|300,250|fluid"></div>
 </div>
 
 <!--FoodDrink-->
 <div id="FoodDrink" data-link-name="food header" class="section header FoodDrink" data-id="FoodDrink">
   <div class="section-header--image">
-    <img class="top place-image  food-image" data-lazy-img alt="{{id}}" data-src="https://media.guim.co.uk/783ac243cd3c22b188782de9d3ecfa2612e8e8b2/0_0_2894_1576/2000.jpg" src="" height="600" width="900" />
+    <img class="top place-image  food-image" data-lazy-img alt="{{id}}"
+      data-src="https://media.guim.co.uk/b599957a6fc01dc6edc0a6c10de4e725f7a6b5d7/0_149_3000_1800/2000.jpg" src=""
+      height="600" width="900" />
     <div class="section-header--title">
       <div class="gs-container">
         <div class="content__main-column">
-            <h1>Amazon</h1>
-            <p>Ramy, US Open Tennis, El Corazón de Sergio Ramos, Undone, Mr Mercedes</p>
+          <h1>Amazon</h1>
+          <p>Goliath, Mr Robot, Modern Love </p>
         </div>
       </div>
     </div>
@@ -92,58 +104,67 @@
     <div class="section-header--button">
       <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
         <g fill="none" fill-rule="evenodd">
-          <circle cx="22" cy="22" r="22" fill="#eacca0"/>
-          <polygon fill="#000" fill-rule="nonzero" points="20.909 23.091 12 22.682 12 21.295 20.909 20.909 21.295 12 22.682 12 23.091 20.909 32 21.295 32 22.682 23.091 23.091 22.682 32 21.295 32"/>
+          <circle cx="22" cy="22" r="22" fill="#eacca0" />
+          <polygon fill="#000" fill-rule="nonzero"
+            points="20.909 23.091 12 22.682 12 21.295 20.909 20.909 21.295 12 22.682 12 23.091 20.909 32 21.295 32 22.682 23.091 23.091 22.682 32 21.295 32" />
         </g>
       </svg>
       <p class="button">Read more</p>
     </div>
   </div>
   <div class="section copy FoodDrink">
-  {{#Amazon}}
-      <div class="content__main-column">
-          <h1 class="heading" id="{{section}}">
-              {{#label}}
-                <div class="text label">{{{label}}}</div>
-              {{/label}}
-              <div class="text">{{{headline}}}</div>
-              <div class="text date">{{{date}}}</div>
-          </h1>
-        {{#image}}
-          <div class="body-image">
-            <img src="{{{image}}}">
-          </div>
-        {{/image}}
-        {{#imageCaption}}
-        <div class="caption">
-          <p class="caption-text">
-            <svg width="11" height="10" viewBox="0 0 11 10"><path fill-rule="evenodd" d="M5.5 0L11 10H0z"/></svg>
-           {{imageCaption}}
-          </p>
-        </div>
-        {{/imageCaption}}
-      <pre class="copy">{{{description}}}</pre><div class="credit">{{{credit}}}</div>
+    {{#Amazon}}
+    <div class="content__main-column">
+      <h1 class="heading" id="{{section}}">
+        {{#label}}
+        <div class="text label">{{{label}}}</div>
+        {{/label}}
+        <div class="text">{{{headline}}}</div>
+        <div class="text date">{{{date}}}</div>
+      </h1>
+      {{#image}}
+      <div class="body-image">
+        <img src="{{{image}}}">
       </div>
-      <div class="ad--wrapper--desktop">
-        <div id="{{adID}}" class="js-ad-slot ad-slot ad-slot--mpu-banner-ad ad-slot--right" data-link-name="ad slot {{adDataName}}" data-test-id="{{adTestId}}" data-name="{{adName}}" data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
+      {{/image}}
+      {{#imageCaption}}
+      <div class="caption">
+        <p class="caption-text">
+          <svg width="11" height="10" viewBox="0 0 11 10">
+            <path fill-rule="evenodd" d="M5.5 0L11 10H0z" /></svg>
+          {{imageCaption}}
+        </p>
       </div>
-      <div class="ad--wrapper--mobile" {{#adIDMobile}} style="padding:20px 0px;" {{/adIDMobile}}>
-        {{#adIDMobile}}
-        <div id="{{adIDMobile}}" class="js-ad-slot ad-slot ad-slot--inline {{adTestIdMobile}}" data-link-name="ad slot {{adDataNameMobile}}" data-test-id="{{adTestIdMobile}}" data-name="{{adNameMobile}}" data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
-        {{/adIDMobile}}
-      </div>
-  {{/Amazon}}
-</div>
+      {{/imageCaption}}
+      <pre class="copy">{{{description}}}</pre>
+      <div class="credit">{{{credit}}}</div>
+    </div>
+    <div class="ad--wrapper--desktop">
+      <div id="{{adID}}" class="js-ad-slot ad-slot ad-slot--mpu-banner-ad ad-slot--right"
+        data-link-name="ad slot {{adDataName}}" data-test-id="{{adTestId}}" data-name="{{adName}}"
+        data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
+    </div>
+    <div class="ad--wrapper--mobile" {{#adIDMobile}} style="padding:20px 0px;" {{/adIDMobile}}>
+      {{#adIDMobile}}
+      <div id="{{adIDMobile}}" class="js-ad-slot ad-slot ad-slot--inline {{adTestIdMobile}}"
+        data-link-name="ad slot {{adDataNameMobile}}" data-test-id="{{adTestIdMobile}}" data-name="{{adNameMobile}}"
+        data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
+      {{/adIDMobile}}
+    </div>
+    {{/Amazon}}
+  </div>
 </div>
 <!--places-->
 <div id="places" data-link-name="places header" class="section header places" data-id="places">
   <div class="section-header--image">
-    <img class="top place-image place-image places-image" data-lazy-img alt="{{id}}" data-src="https://media.guim.co.uk/4d3e0d0e45125d686efc42fda45cb7a516ce8b99/0_0_1200_672/1000.jpg" src="" height="600" width="900" />
+    <img class="top place-image place-image places-image" data-lazy-img alt="{{id}}"
+      data-src="https://media.guim.co.uk/7c8488dcbc2a08d688a3bef6822727fc34444f54/0_0_4664_2623/2000.jpg" src=""
+      height="600" width="900" />
     <div class="section-header--title">
       <div class="gs-container">
         <div class="content__main-column">
-            <h1>BBC iPlayer</h1>
-            <p>Peaky Blinders, Untouchable: The Rise and Fall of Harvey Weinstein, The Capture, State of the Union</p>
+          <h1>BBC iPlayer</h1>
+          <p>The Apprentice, RuPaul’s Drag Race UK, Motherland</p>
         </div>
       </div>
     </div>
@@ -157,56 +178,65 @@
     <div class="section-header--button">
       <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
         <g fill="none" fill-rule="evenodd">
-          <circle cx="22" cy="22" r="22" fill="#eacca0"/>
-          <polygon fill="#000" fill-rule="nonzero" points="20.909 23.091 12 22.682 12 21.295 20.909 20.909 21.295 12 22.682 12 23.091 20.909 32 21.295 32 22.682 23.091 23.091 22.682 32 21.295 32"/>
+          <circle cx="22" cy="22" r="22" fill="#eacca0" />
+          <polygon fill="#000" fill-rule="nonzero"
+            points="20.909 23.091 12 22.682 12 21.295 20.909 20.909 21.295 12 22.682 12 23.091 20.909 32 21.295 32 22.682 23.091 23.091 22.682 32 21.295 32" />
         </g>
       </svg>
       <p class="button">Read more</p>
     </div>
   </div>
   <div class="section copy places">
-  {{#iPlayer}}
-      <div class="content__main-column">
-          <h1 class="heading" id="{{section}}">
-              {{#label}}
-                <div class="text label">{{{label}}}</div>
-              {{/label}}
-              <div class="text">{{{headline}}}</div>
-              <div class="text date">{{{date}}}</div>
-          </h1>
-        {{#image}}
-          <div class="body-image">
-            <img src="{{{image}}}">
-          </div>
-        {{/image}}
-        {{#imageCaption}}
-          <div class="caption">
-            <p class="caption-text">
-              <svg width="11" height="10" viewBox="0 0 11 10"><path fill-rule="evenodd" d="M5.5 0L11 10H0z"/></svg>
-              {{imageCaption}}
-            </p>
-          </div>
-        {{/imageCaption}}
-      <pre class="copy">{{{description}}}</pre><div class="credit">{{{credit}}}</div>
+    {{#iPlayer}}
+    <div class="content__main-column">
+      <h1 class="heading" id="{{section}}">
+        {{#label}}
+        <div class="text label">{{{label}}}</div>
+        {{/label}}
+        <div class="text">{{{headline}}}</div>
+        <div class="text date">{{{date}}}</div>
+      </h1>
+      {{#image}}
+      <div class="body-image">
+        <img src="{{{image}}}">
       </div>
-      <div class="ad--wrapper--desktop">
-        <div id="{{adID}}" class="js-ad-slot ad-slot ad-slot--mpu-banner-ad ad-slot--right" data-link-name="ad slot {{adDataName}}" data-test-id="{{adTestId}}" data-name="{{adName}}" data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
+      {{/image}}
+      {{#imageCaption}}
+      <div class="caption">
+        <p class="caption-text">
+          <svg width="11" height="10" viewBox="0 0 11 10">
+            <path fill-rule="evenodd" d="M5.5 0L11 10H0z" /></svg>
+          {{imageCaption}}
+        </p>
       </div>
-  {{/iPlayer}}
-</div>
+      {{/imageCaption}}
+      <pre class="copy">{{{description}}}</pre>
+      <div class="credit">{{{credit}}}</div>
+    </div>
+    <div class="ad--wrapper--desktop">
+      <div id="{{adID}}" class="js-ad-slot ad-slot ad-slot--mpu-banner-ad ad-slot--right"
+        data-link-name="ad slot {{adDataName}}" data-test-id="{{adTestId}}" data-name="{{adName}}"
+        data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
+    </div>
+    {{/iPlayer}}
+  </div>
 </div>
 <div class="ad--wrapper--mobile" style="padding:20px 0px;">
-  <div id="dfp-ad--inline6" class="js-ad-slot ad-slot ad-slot--inline ad-slot--inline6" data-link-name="ad slot inline6" data-test-id="ad-slot-inline6" data-name="inline6" data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
+  <div id="dfp-ad--inline6" class="js-ad-slot ad-slot ad-slot--inline ad-slot--inline6" data-link-name="ad slot inline6"
+    data-test-id="ad-slot-inline6" data-name="inline6" data-mobile="1,1|2,2|300,250|fluid"
+    data-desktop="1,1|2,2|300,250|fluid"></div>
 </div>
 <!--BOOKS-->
 <div id="books" data-link-name="books header" class="section header books" data-id="books">
   <div class="section-header--image">
-    <img class="{{imageclass}} place-image writing-image" data-lazy-img alt="{{id}}" data-src="https://media.guim.co.uk/513008600783bf0da63a5ea0f29dc88312e7afb2/0_0_6240_4160/2000.jpg" src="" height="600" width="900" />
+    <img class="{{imageclass}} place-image writing-image" data-lazy-img alt="{{id}}"
+      data-src="https://media.guim.co.uk/25900d348fff54d35e73b0a5f10ce36c0d5d9334/0_0_7677_4606/2000.jpg" src=""
+      height="600" width="900" />
     <div class="section-header--title">
       <div class="gs-container">
         <div class="content__main-column">
-            <h1>Best of the rest</h1>
-            <p>The Great British Bake Off, A Confession, The Loudest Voice, Cain</p>
+          <h1>Best of the rest</h1>
+          <p>ER, Catherine the Great, Watchmen</p>
         </div>
       </div>
     </div>
@@ -220,46 +250,53 @@
     <div class="section-header--button">
       <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
         <g fill="none" fill-rule="evenodd">
-          <circle cx="22" cy="22" r="22" fill="#eacca0"/>
-          <polygon fill="#000" fill-rule="nonzero" points="20.909 23.091 12 22.682 12 21.295 20.909 20.909 21.295 12 22.682 12 23.091 20.909 32 21.295 32 22.682 23.091 23.091 22.682 32 21.295 32"/>
+          <circle cx="22" cy="22" r="22" fill="#eacca0" />
+          <polygon fill="#000" fill-rule="nonzero"
+            points="20.909 23.091 12 22.682 12 21.295 20.909 20.909 21.295 12 22.682 12 23.091 20.909 32 21.295 32 22.682 23.091 23.091 22.682 32 21.295 32" />
         </g>
       </svg>
       <p class="button">Read more</p>
     </div>
   </div>
   <div class="section copy books">
-  {{#Rest}}
-      <div class="content__main-column">
-          <h1 class="heading" id="{{section}}">
-              {{#label}}
-                <div class="text label">{{{label}}}</div>
-              {{/label}}
-              <div class="text">{{{headline}}}</div>
-              <div class="text date">{{{date}}}</div>
-          </h1>
-        {{#image}}
-          <div class="body-image">
-            <img src="{{{image}}}">
-          </div>
-        {{/image}}
-        {{#imageCaption}}
-          <div class="caption">
-            <p class="caption-text">
-              <svg width="11" height="10" viewBox="0 0 11 10"><path fill-rule="evenodd" d="M5.5 0L11 10H0z"/></svg>
-             {{imageCaption}}
-            </p>
-          </div>
-        {{/imageCaption}}
-      <pre class="copy">{{{description}}}</pre><div class="credit">{{{credit}}}</div>
+    {{#Rest}}
+    <div class="content__main-column">
+      <h1 class="heading" id="{{section}}">
+        {{#label}}
+        <div class="text label">{{{label}}}</div>
+        {{/label}}
+        <div class="text">{{{headline}}}</div>
+        <div class="text date">{{{date}}}</div>
+      </h1>
+      {{#image}}
+      <div class="body-image">
+        <img src="{{{image}}}">
       </div>
-      <div class="ad--wrapper--desktop">
-        <div id="{{adID}}" class="js-ad-slot ad-slot ad-slot--mpu-banner-ad ad-slot--right" data-link-name="ad slot {{adDataName}}" data-test-id="{{adTestId}}" data-name="{{adName}}" data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
+      {{/image}}
+      {{#imageCaption}}
+      <div class="caption">
+        <p class="caption-text">
+          <svg width="11" height="10" viewBox="0 0 11 10">
+            <path fill-rule="evenodd" d="M5.5 0L11 10H0z" /></svg>
+          {{imageCaption}}
+        </p>
       </div>
-      <div class="ad--wrapper--mobile" {{#adIDMobile}} style="padding:20px 0px;" {{/adIDMobile}}>
-        {{#adIDMobile}}
-        <div id="{{adIDMobile}}" class="js-ad-slot ad-slot ad-slot--inline {{adTestIdMobile}}" data-link-name="ad slot {{adDataNameMobile}}" data-test-id="{{adTestIdMobile}}" data-name="{{adNameMobile}}" data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
-        {{/adIDMobile}}
-      </div>
-  {{/Rest}}
-</div>
+      {{/imageCaption}}
+      <pre class="copy">{{{description}}}</pre>
+      <div class="credit">{{{credit}}}</div>
+    </div>
+    <div class="ad--wrapper--desktop">
+      <div id="{{adID}}" class="js-ad-slot ad-slot ad-slot--mpu-banner-ad ad-slot--right"
+        data-link-name="ad slot {{adDataName}}" data-test-id="{{adTestId}}" data-name="{{adName}}"
+        data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
+    </div>
+    <div class="ad--wrapper--mobile" {{#adIDMobile}} style="padding:20px 0px;" {{/adIDMobile}}>
+      {{#adIDMobile}}
+      <div id="{{adIDMobile}}" class="js-ad-slot ad-slot ad-slot--inline {{adTestIdMobile}}"
+        data-link-name="ad slot {{adDataNameMobile}}" data-test-id="{{adTestIdMobile}}" data-name="{{adNameMobile}}"
+        data-mobile="1,1|2,2|300,250|fluid" data-desktop="1,1|2,2|300,250|fluid"></div>
+      {{/adIDMobile}}
+    </div>
+    {{/Rest}}
+  </div>
 </div>
